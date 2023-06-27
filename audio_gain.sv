@@ -40,20 +40,20 @@ module audio_gain(input logic clk,
 	
 	/* Config reg, connected to SPI
 	   7      0 = reserved.  Write as 0 ignore on read
-     6:4    000 = large gain/attenuation block disabled
+         6:4    000 = large gain/attenuation block disabled
 	        001 = 6dB gain
-			010 = 12dB gain
-			011 = 18dB gain
-			100 = reserved
-			101 = -6dB 
-			110 = -12dB 
-			111 = -18dB
+		010 = 12dB gain
+		011 = 18dB gain
+		100 = reserved
+		101 = -6dB 
+		110 = -12dB 
+		111 = -18dB
 	   3      0 = 2, 4dB are positive gain
 	          1 = 2, 4dB are negative gain
 	   2      0 = 2nd 2dB gain block disabled
 	          1 = 2nd 2dB gain block enabled
 	   1      0 = 2dB gain disabled
-		      1 = 2dB gain block enabled
+		  1 = 2dB gain block enabled
 	   0      0 = Gain disabled (bypass) default
 	          1 = Gain block enabled
 	 */ 
